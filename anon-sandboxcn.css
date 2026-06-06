@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import url("./anon-pwcn.css");
+@import url("https://cdn.jsdelivr.net/gh/parawatch-wiki-cn/AnonTheme@main/anon-pwcn.css");
 
  div#header h1{
      position: relative;
@@ -10,5 +10,5 @@
      height: 100%;
      margin: unset;
  
-     background: url("./img/parawatch-sandbox.png") no-repeat;
+     background: url("https://cdn.jsdelivr.net/gh/parawatch-wiki-cn/AnonTheme@main/img/parawatch-sandbox.png") no-repeat;
 }

@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import url("https://cdn.jsdelivr.net/gh/scp-cn-tech/sigma9@cn/cn/sigma9_ch.min.css");
-@import url("./lib/creepypasta-theme.css");
+@import url("https://cdn.jsdelivr.net/gh/parawatch-wiki-cn/AnonTheme@main/lib/creepypasta-theme.css");
 
 /* 
     Creepypasta Theme
@@ -39,7 +39,7 @@
      --fg-accent-dark: hsl(60, 100%, 75%);
  
      --fg-accent-2: hsl(140, 3%, 83%);
-     --fg-accent-dark-2: hsl(207, 32%, 63%);
+     --fg-accent-dark-2: hsl(60, 53%, 59%);
  
      --vivid-lime-green: hsl(112, 77%, 48%);
  
@@ -90,7 +90,7 @@
  
 /* ---- HEADER ---- */
  div#container-wrap{
-     background-image: url("./img/gradient-anon.png");
+     background-image: url("https://cdn.jsdelivr.net/gh/parawatch-wiki-cn/AnonTheme@main/img/gradient-anon.png");
 }
  div#header{
      background-image: none;
@@ -103,7 +103,7 @@
      height: 100%;
      margin: unset;
  
-     background: url("./img/parawatch-anon.png") no-repeat;
+     background: url("https://cdn.jsdelivr.net/gh/parawatch-wiki-cn/AnonTheme@main/img/parawatch-anon.png") no-repeat;
 }
  
 /* ---- SIDE-BAR ---- */
