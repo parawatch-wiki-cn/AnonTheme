@@ -3,6 +3,8 @@
 @import url("https://cdn.jsdelivr.net/gh/scp-cn-tech/sigma9@cn/cn/sigma9_ch.min.css");
 @import url("https://cdn.jsdelivr.net/gh/parawatch-wiki-cn/AnonTheme@main/lib/creepypasta-theme.css");
 
+@import url("https://cdn.jsdelivr.net/gh/parawatch-wiki-cn/AnonTheme@main/module/admin-verify.css");
+
 /* 
     Creepypasta Theme
     [2019 Wikidot Theme]
@@ -90,7 +92,7 @@
  
 /* ---- HEADER ---- */
  div#container-wrap{
-     background-image: url("https://cdn.jsdelivr.net/gh/parawatch-wiki-cn/AnonTheme@main/img/gradient-anon.png");
+     background-image: url("./img/gradient-anon.png");
 }
  div#header{
      background-image: none;
@@ -103,7 +105,7 @@
      height: 100%;
      margin: unset;
  
-     background: url("https://cdn.jsdelivr.net/gh/parawatch-wiki-cn/AnonTheme@main/img/parawatch-anon.png") no-repeat;
+     background: url("./img/parawatch-main.png") no-repeat;
 }
  
 /* ---- SIDE-BAR ---- */

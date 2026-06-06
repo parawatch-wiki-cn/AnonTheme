@@ -1,0 +1,41 @@
+/* 改自SCP基金会云国分部 */
+/* 主管理员 */
+.printuser a:last-child[href*="http://www.wikidot.com/user:info/dvson"]{
+   color: #ffb800;
+   font-weight: bold;
+}
+ 
+/* 管理员 */
+.printuser a:last-child[href*="user:info/chhokmah-lu"],
+.printuser a:last-child[href*="user:info/eastleavecn"],
+.printuser a:last-child[href*="user:info/lordboardlum"],
+.printuser a:last-child[href*="user:info/unknownpersonal"]{
+    /* color: #5DA9FF;  */
+    font-weight: bold;
+}
+ 
+/* 版主 */
+.printuser a:last-child[href*="user:info/ddadda"] {
+    font-weight: bold;
+}
+ 
+/* BOT - 暂无*/
+ 
+/* 主管理员头衔设置 */
+.post > .long > .head .info:has(span.printuser a[onclick*="8299392"]) .avatarhover::after{content: "主要管理员";background:#D5B900}
+ 
+/* 管理员头衔设置 */
+.post > .long > .head .info:has(span.printuser a[onclick*="5435392"]) .avatarhover::after{content: "管理员";background:#225794} 
+.post > .long > .head .info:has(span.printuser a[onclick*="8346642"]) .avatarhover::after{content: "管理员";background:#225794}
+.post > .long > .head .info:has(span.printuser a[onclick*="9701445"]) .avatarhover::after{content: "管理员";background:#225794}
+.post > .long > .head .info:has(span.printuser a[onclick*="9312583"]) .avatarhover::after{content: "管理员";background:#225794}
+ 
+/* 机器人头衔设置 */
+ 
+/* 版主头衔设置 */
+.post > .long > .head .info:has(span.printuser a[onclick*="9314093"]) .avatarhover::after{content: "版主";background:#603BA1} 
+ 
+/* 其他头衔设置 */
+ 
+/* 默认配置代码 */
+.post>.long>.head .info .avatarhover:after{background:#C0DACB;margin-left:.72em;padding:.20em;border-radius:2.8px;font-weight:700;font-size:85%;color:#fff;word-break:keep-all}

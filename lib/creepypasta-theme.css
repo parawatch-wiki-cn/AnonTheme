@@ -50,11 +50,11 @@ ins, del {
 /* HEADER */
 
 div#container-wrap {
-    background: url("https://cdn.jsdelivr.net/gh/parawatch-wiki-cn/AnonTheme@main/lib/img/gradient.png") top left repeat-x;
+    background: url("./img/gradient.png") top left repeat-x;
 }
 
 div#header {
-    background: url("https://cdn.jsdelivr.net/gh/parawatch-wiki-cn/AnonTheme@main/lib/img/parawatch.png") 10px 40px no-repeat;
+    background: url("./img/parawatch.png") 10px 40px no-repeat;
 }
 
 div#header h1 a span {
