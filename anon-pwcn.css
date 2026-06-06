@@ -1,0 +1,579 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/scp-cn-tech/sigma9@cn/cn/sigma9_ch.min.css");
+@import url("./lib/creepypasta-theme.css");
+
+/* 
+    Creepypasta Theme
+    [2019 Wikidot Theme]
+    Created by The Great Hippo
+    Based on "Sigma-9 Theme" by Aelanna
+
+    Parawatch "Anon" Theme
+    [2021 Wikidot Theme]
+    Created by Lt Flops
+    Based on "Creepypasta Theme" by The Great Hippo and 4chan theme "Tomorrow"
+
+    Parawatch "Anon" Theme For Parawatch Wiki CN
+    Edited by Chhokmah Lu
+
+    CC BY-SA 3.0
+*/
+
+
+/* ---- COLOURS ---- */
+ :root{
+     --bg-light: hsl(0, 0%, 7%);
+     --bg: hsl(210, 6%, 12%);
+     --bg-dark: hsl(220, 7%, 17%);
+ 
+     --bg-light-2: hsl(0, 0%, 11%);
+ 
+     --fg-light: hsl(140, 3%, 83%);
+     --fg: hsl(140, 3%, 78%);
+     --fg-dark: hsl(45, 94%,82%);
+     --fg-dark-2: hsl(59, 100%, 70%);
+ 
+     --fg-accent-light: hsl(60, 100%, 90%);
+     --fg-accent: hsl(60, 100%, 80%);
+     --fg-accent-dark: hsl(60, 100%, 75%);
+ 
+     --fg-accent-2: hsl(140, 3%, 83%);
+     --fg-accent-dark-2: hsl(207, 32%, 63%);
+ 
+     --vivid-lime-green: hsl(112, 77%, 48%);
+ 
+     --box-bg-dark: #323333dd;
+     --box-bg-dark-n: hsl(180, 2%, 20%);
+     --box-border-d: hsl(0, 0%, 27%);
+     --text-muted: hsl(0, 0%, 70%);
+}
+ 
+/* ---- GENERAL ---- */
+ #page-content{
+     font-size: 15px;
+}
+ a, body, span{
+     word-break: unset;
+}
+ a:visited, a:hover{
+     color: var(--fg-accent-dark-2);
+}
+ a.newpage{
+     color: hsl(237, 27%, 68%);
+}
+ ins, del{
+     color: var(--bg-dark);
+}
+ .meta-title{
+     color: var(--fg-light);
+     border-bottom-color: var(--fg-light);
+}
+ #toc{
+     background-color: unset;
+}
+ 
+/* ---- SCROLLBAR ---- */
+ ::-webkit-scrollbar-track{
+     background: var(--bg-dark);
+}
+ ::-webkit-scrollbar-thumb{
+     background: var(--fg-dark);
+     border: none;
+}
+ ::-webkit-scrollbar-thumb:hover{
+     background: var(--fg-dark-2);
+}
+ textarea::-webkit-scrollbar-track{
+     background: var(--bg);
+}
+ 
+/* ---- HEADER ---- */
+ div#container-wrap{
+     background-image: url("./img/gradient-anon.png");
+}
+ div#header{
+     background-image: none;
+}
+ div#header h1{
+     position: relative;
+     float: unset;
+     top: 40px;
+     max-height: 100%;
+     height: 100%;
+     margin: unset;
+ 
+     background: url("./img/parawatch-anon.png") no-repeat;
+}
+ 
+/* ---- SIDE-BAR ---- */
+ div#side-bar div.side-block{
+     background-color: var(--bg-dark) !important;
+     border-color: var(--fg-dark-2);
+     box-shadow: none;
+}
+ div#side-bar div.side-block div.heading,
+ div#side-bar div.collapsible-block-unfolded-link,
+ div#side-bar div.collapsible-block-unfolded-link a.collapsible-block-link,
+ div#side-bar div.collapsible-block-unfolded-link a.collapsible-block-link:hover{
+     color: var(--fg-dark-2);
+     border-color: var(--fg-dark-2);
+}
+ #side-bar div.menu-item > img{
+     filter: hue-rotate(62deg) invert(100%);
+}
+ @media (max-width: 767px){
+     #side-bar{
+         background-color: var(--bg-dark);
+    }
+}
+ 
+/* ---- TOP-BAR ---- */
+ #top-bar a{
+     color: var(--fg-accent-dark);
+}
+ #top-bar .open-menu a{
+     color: var(--fg-dark-2);
+     background-color: var(--bg-dark);
+     border-color: var(--fg-dark-2);
+}
+ div.yui-navset div.yui-content{
+     background-color: var(--bg);
+}
+ div.yui-navset ul.yui-nav a,
+ div.yui-navset div.yui-navset-top ul.yui-nav a{
+     color: var(--fg-accent);
+     background-color: var(--bg-dark);
+     border-color: var(--fg-light);
+}
+ div.yui-navset ul.yui-nav a:hover,
+ div.yui-navset ul.yui-nav a:focus{
+     color: var(--fg-accent-light);
+     background-color: var(--bg-light);
+}
+ div.yui-navset ul.yui-nav .selected a,
+ div.yui-navset ul.yui-nav .selected a:focus,
+ div.yui-navset ul.yui-nav .selected a:hover{
+     background-color: var(--bg-light-2);
+     border-color: var(--fg-accent);
+}
+ 
+/* ---- INFO BAR ---- */
+ .info-container{
+     --linkColour: var(--fg);
+     --barColour: var(--bg-dark);
+}
+ 
+/* ---- INFO MODULE ---- */
+ #page-content .rate-box-with-credit-button .creditButton p a{
+     color: var(--fg);
+}
+ #page-content .rate-box-with-credit-button .creditButton p a:hover,
+ #page-content .creditButtonStandalone p a:hover{
+     color: var(--vivid-lime-green);
+}
+ #page-content .modalbox{
+     background: var(--bg);
+     box-shadow: none;
+}
+ .close-credits,
+ .credit-back{
+     filter: hue-rotate(62deg) invert(100%) brightness(150%);
+}
+ div#footer{
+     background: var(--bg-dark);
+}
+ #license-area{
+     color: var(--fg);
+}
+ 
+/* ---- INTERWIKI ---- */
+ iframe.scpnet-interwiki-frame{
+     border-color: var(--fg-dark-2);
+}
+ #interwiki body{
+     overflow: hidden;
+}
+ #interwiki .side-block{
+     background-color: var(--bg-dark);
+     border-color: var(--fg-dark-2);
+     box-shadow: none;
+}
+ #interwiki .menu-item img{
+     filter: hue-rotate(213deg) saturate(1.1364) brightness(2.7037);
+}
+ #interwiki .menu-item a{
+     color: var(--fg-dark);
+}
+ #interwiki .heading{
+     color: var(--fg-dark-2);
+     border-color: var(--fg-dark-2);
+}
+ 
+/* ---- RATING MODULE ---- */
+ .page-rate-widget-box,
+ .rate-box-with-credit-button{
+     box-shadow: none;
+}
+ .page-rate-widget-box .rate-points,
+ .page-rate-widget-box .rateup a,
+ .page-rate-widget-box .ratedown a,
+ .page-rate-widget-box .cancel a,
+ .page-rate-widget-box .rateup a:hover,
+ .page-rate-widget-box .ratedown a:hover,
+ .page-rate-widget-box .cancel a:hover{
+     color: var(--fg);
+}
+ 
+/* ---- LICENSEBOX ---- */
+ .licensebox .collapsible-block-link{
+     color: var(--fg-accent-dark);
+}
+ 
+/* ---- FOOTNOTE HOVERS ---- */
+ .hovertip{
+     box-shadow: none;
+}
+ 
+/* ---- EDITING WINDOWS ---- */
+ .owindow{
+     border-color: var(--fg-dark-2);
+}
+ .owindow,
+ .owindow h1,
+ .owindow h2,
+ .owindow h3,
+ .owindow h4,
+ .owindow h5,
+ .owindow h6{
+     color: var(--fg);
+}
+ .owindow{
+     background-color: var(--bg-dark);
+}
+ .owindow .title{
+     background-color: var(--bg);
+}
+ .owindow a,
+ .owindow a:visited{
+     color: var(--fg-accent-dark);
+}
+ .owindow .active{
+     color: var(--fg-dark-2);
+}
+ .owindow .content.modal-body img{
+     background-color: var(--bg-dark) !important;
+}
+ .owindow .button-bar a{
+     background-color: transparent;
+     border-color: var(--fg-dark-2);
+}
+ .owindow .button-bar a:hover,
+ .owindow .button-bar a:focus{
+     background-color: transparent;
+     border-color: var(--fg-dark);
+}
+ table.page-files .highlight{
+     background-color: var(--bg-light);
+}
+ input.text,
+ input.text:focus,
+ input.text:hover{
+     color: var(--fg-light);
+     border-color: var(--fg);
+}
+ .wd-editor-toolbar-panel {
+     filter: hue-rotate(62deg) invert(83%);
+}
+ textarea{
+     color: var(--fg);
+     background-color: var(--bg-dark);
+}
+ .change-textarea-size a{
+     color: var(--fg);
+     background-color: var(--bg-dark);
+}
+ div#lock-info{
+     background-color: var(--bg);
+}
+ 
+/* ---- SELECTION ---- */
+ ::selection{
+     background: hsl(207, 11%, 27%);
+}
+ 
+/* ---- PARAWATCH DIV BLOCK ---- */
+ div.parapost{
+     border-color: var(--bg-dark);
+}
+ span.title{
+     color: var(--fg-dark-2);
+     font-size: 110%;
+     font-weight: bold;
+     cursor: pointer;
+     word-break: unset;
+}
+ span.title span{
+     word-break: unset;
+}
+ span.title:hover,
+ span.title:focus{
+     text-decoration: underline;
+}
+ 
+/* -------- MOBILE MEDIA QUERY -------- */
+ @media (max-width: 479px){
+     div#header h1{
+         background-position-y: .5em !important;
+         background-size: 75% !important;
+    }
+}
+ 
+/* -------- NOTE MEDIA QUERY -------- */
+ @media (min-width: 480px) and (max-width: 580px){
+     div#header h1{
+         background-position-y: 1em !important;
+         background-size: 60% !important;
+    }
+}
+ 
+/* -------- MINI TABLET MEDIA QUERY -------- */
+ @media (min-width: 581px) and (max-width: 767px){
+     div#header h1{
+         background-position-y: .25em !important;
+         background-size: 65% !important;
+    }
+}
+ 
+ @media (max-width: 767px){
+     .open-menu a:hover{
+         box-shadow: none !important;
+    }
+     #top-bar .open-menu a{
+         background-color: var(--bg-dark);
+         border-width: .1em;
+    }
+}
+ 
+/* -------- TABLET MEDIA QUERY -------- */
+ @media (min-width: 768px) and (max-width: 979px){
+     div#header h1{
+         background-size: 75% !important;
+    }
+}
+ 
+/* ---- CODE SELECTORS [BACK-END] ---- */
+ .hl-identifier,
+ .hl-code,
+ .hl-brackets{
+     color: var(--fg);
+}
+ 
+ .hl-var{
+     color: #21ff00;
+}
+ 
+ .hl-special,
+ .hl-quotes{
+     color: #ffff00;
+}
+ 
+ .hl-reserved{
+     color: #00b2ff;
+}
+ 
+ .hl-number,
+ .hl-string{
+     color: #ff0020;
+}
+ 
+/* ==本地修改部分，将版式修改得更加适应全站==*/
+ 
+/* 收起侧边栏按钮*/
+#side-bar div.menu-item img{
+     filter: hue-rotate(230deg) invert(100%);
+}
+ 
+#top-bar .open-menu a {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 5;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--box-border-d);
+    background-color: var(--box-bg-dark);
+    border-radius: 4px;
+    color: var(--fg-dark);
+ 
+    pointer-events: auto;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+ 
+#top-bar .open-menu a:hover {
+    border-color: var(--fg-accent-dark-2);
+    color: var(--fg-accent-dark-2);
+}
+ 
+/* 论坛与讨论串*/
+.thread-container .post .head, 
+.thread-container .post.folded .short {
+    background: var(--box-bg-dark-n);
+    box-shadow: none;
+    border-radius: 4px;
+    border-left: solid 0.25rem var(--fg-accent-dark-2);
+    overflow-wrap: break-word;
+}
+ 
+.thread-container .post .long .head .options {
+    float: right;
+    margin: 0rem 0rem -1.2rem 0rem;
+    padding: 0;
+}
+ 
+.forum-category-box .description-block,
+.forum-thread-box .description-block {
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    box-shadow: none !important;
+    border: 1px solid var(--box-border-d);
+    border-left: solid 0.4rem var(--fg-accent-dark-2);
+    border-right: solid 0.4rem var(--fg-accent-dark-2);
+    margin: 1em 4em;
+    background-color: var(--box-bg-dark);
+    overflow: hidden;
+    height: 100%;
+}
+ 
+div.new-post a {
+    border: 1px solid var(--box-border-d);
+    background-color: var(--box-bg-dark);
+    padding: 0.35rem 0.75rem;
+    font-size: 100%;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+ 
+div.new-post a:hover {
+    border-color: var(--fg-accent-dark-2);
+    color: var(--fg-accent-dark-2);
+}
+ 
+.forum-category-box table th,
+.forum-start-box table th {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--fg-accent-dark-2);
+    border: 1px solid var(--box-border-d);
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+ 
+.forum-category-box table td,
+.forum-start-box table td {
+    border: 1px solid var(--box-border-d);
+    padding: 0.3rem 0.5rem;
+    word-break: break-word;
+    color: var(--text-muted);
+    transition: background-color 0.2s ease;
+}
+ 
+.forum-category-box table tr.head td,
+.forum-start-box table tr.head td{
+    background-color: var(--box-bg-dark-n);
+    color: var(--fg-accent-dark-2);
+    padding: 0.45rem 0.5rem;
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
+ 
+.forum-category-box table,
+.forum-start-box table {
+    width: 100%;
+    table-layout: fixed;
+}
+ 
+.forum-category-box table td,
+.forum-start-box table td {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+ 
+.forum-category-box table tr:not(.head):hover td,
+.forum-start-box table tr:not(.head):hover td {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--fg-dark);
+}
+ 
+ /* 暴力CSS这一块（） */
+@media (max-width: 768px) { 
+   .forum-category-box .description-block, 
+   .forum-thread-box .description-block { 
+       margin: 0.5rem 1rem;
+    } 
+    .forum-category-box table td, 
+    .forum-start-box table td { 
+         padding: 0.1rem 0.1rem; 
+    }
+}
+
+/* ==本地原创部分==*/
+ 
+.info-box {
+  box-sizing: border-box;
+  flex: 0 0 calc(50% - 10px);
+  background-color: var(--box-bg-dark);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 8px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%);
+}
+ 
+@media (max-width: 768px) {
+  .info-box {
+    flex: 0 0 100%;
+  }
+}
+ 
+.decorated-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--fg-dark);
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-family: inherit;
+}
+ 
+.decorated-title::before,
+.decorated-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  flex-grow: 1;
+  max-width: auto;
+  background-color:var(--fg-dark);
+}
+ 
+.list-box {
+  position: relative;
+  padding: 2px 4px 2px 5px;
+  margin: 10px 5px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 0 4px 4px 0;
+  border-left: 2px solid var(--fg-accent-dark-2);
+}
+ 
+.signature {
+    display: block !important;
+}
