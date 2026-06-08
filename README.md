@@ -1,6 +1,8 @@
 ## 观谬轻量版版式
 
 [![License](https://img.shields.io/badge/License-CC%20BY--SA%203.0-lightgrey.svg)]([https://creativecommons.org/licenses/by-sa/3.0/deed.cn](https://creativecommons.org/licenses/by-sa/3.0/deed.zh))
+
+[![](https://data.jsdelivr.com/v1/package/gh/parawatch-wiki-cn/AnonTheme/badge)](https://www.jsdelivr.com/package/gh/parawatch-wiki-cn/AnonTheme)
   
 这是**观谬轻量版**版式主题的GitHub存储库。是用于[观谬维基中文分部](https://parawatch-wiki-cn.wikidot.com/)及其沙盒站[观谬沙盒](https://parawatch-sandbox-cn.wikidot.com/)的默认CSS版式。目前由观谬维基中文分部站务组维护。
 
