@@ -4,11 +4,11 @@
 
 [![](https://data.jsdelivr.com/v1/package/gh/parawatch-wiki-cn/AnonTheme/badge)](https://www.jsdelivr.com/package/gh/parawatch-wiki-cn/AnonTheme)
   
-这是**观谬轻量版**版式主题的GitHub存储库。是用于[观谬维基中文分部](https://parawatch-wiki-cn.wikidot.com/)及其沙盒站[观谬沙盒](https://parawatch-sandbox-cn.wikidot.com/)的默认CSS版式。目前由观谬维基中文分部站务组维护。
+这是**观谬轻量版**版式主题的GitHub存储库。是用于[观谬维基中文分部](https://parawatch-wiki-cn.wikidot.com/)及其沙盒站[观谬沙盒](https://parawatch-sandbox-cn.wikidot.com/)的默认CSS版式。目前由观谬维基中文分部站务组维护。同时现在也为[观谬维基英文分部](https://parawatch-wiki.wikidot.com/)提供版式储存。
 
 **观谬轻量版**版式基于Creepypasta版式与SCP Sigma-9版式制作。
 
-使用[jsDelivr](https://www.jsdelivr.com/package/gh/parawatch-wiki-cn/AnonTheme)拉取仓库并通过[JSDMirror](https://cdn.jsdmirror.com/)镜像直接在Wikidot中使用。
+使用[jsDelivr](https://www.jsdelivr.com/package/gh/parawatch-wiki-cn/AnonTheme)拉取仓库并通过[jsDMirror](https://cdn.jsdmirror.com/)镜像直接在Wikidot中使用。
 
 pages文件夹下的index.html是一个模仿Wikidot结果的原生HTML网页，可以再本地开发测试时查看版式的大概效果。
 
